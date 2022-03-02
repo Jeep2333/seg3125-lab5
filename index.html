@@ -1,0 +1,441 @@
+<!-- This file contains many elements adapted from the online tutoral -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+
+<!-- Images source: -->
+<!-- jule.jpg taken from https://www.freepik.com/premium-vector/cartoon-successful-hairdresser_3951066.htm -->
+<!-- Erwind.jpb https://www.kijiji.ca/v-construction-trades-jobs/winnipeg/bicycle-mechanic/1499188319 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head should contain an appropriate title for your site -->
+<head>
+    <title>11's Hair</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <script src="scripts/service.js"></script>
+    <!-- Your own additional style sheet -->
+     <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+
+    <!-- Medium size container, padding 3, margins 3, background dark, text is white -->
+    <!-- Should show the name of your company with an image or logo -->
+    <!-- Bootstrap has its own font for H1, H2, p, etc.  -->
+    <!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
+    <!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
+    <!-- source for logo.jpg : https://www.51yuansu.com/sc/lejtmktmtj.html-->
+    <div class="container-md p-3 my-3 border bg-secondary text-white">
+        <img src="images/logo.jpg" width="122" height="108">
+        <h1 style="font-family:verdana">Welcome to 11's Hair</h1>
+        
+        <p class="font-italic" style="font-family:verdana">We provide only Beauty!</p>
+    </div>
+
+    <!-- Bootstrap contains a grid system you can explore https://www.w3schools.com/bootstrap4/bootstrap_grid_system.asp -->
+    <!-- It can be useful for placement of information -->
+    <!-- <div class="row p-3 bg-white text-secondary border"> -->
+    <div class="container">
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+              <a class="nav-link active btn-secondary" data-toggle="tab" href="#Service">Service</a>
+              <i class="material-icons">home</i>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn-secondary" data-toggle="tab" href="#Booking">Find your hair dressers</a>
+                <i class="material-icons" style="font-size:36px">business</i>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link btn-secondary" data-toggle="tab" href="#Find">Where to find us</a>
+              <i class="material-icons" style="color:red">add_location</i>
+            </li>
+        </ul>
+
+    <!-- </div> -->
+    <div class="tab-content">
+        <div class=" tab-pane container active" id="Service"><br>
+    <!-- When you have messages to tell, remember that center align is not always the best choice -->
+        <div class="container-md p-3 my-3 border bg-secondary text-white">
+            <h3 style="font-family:verdana">Work Gallary</h3>
+            <div class="card-columns">
+                <img class="card-img-top" src="images/dye.jpg" alt="Card image" width="300" height="370">
+                <img class="card-img-top" src="images/haircut.jpg" alt="Card image" width="300" height="370">
+                <img class="card-img-top" src="images/blech.jpg" alt="Card image" width="300" height="370">
+            </div>
+        </div>
+
+
+    <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
+    <!-- Might be (or not) useful to show some information to the user -->
+    <div class="container text-secondary">
+       
+        <h2 class= "text-dark" style="font-family:verdana">Services</h2>
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>All services require appointment!</strong>
+        </div>            
+        <table class="table table-secondary table-hover text-dark border">
+            <thead>
+            <tr>
+                <th>Service</th>
+                <th>Price for VIPs</th>
+                <th>Price for regulars</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Haircut</td>
+                <td>Long hair-----$30<br>Short hair-----$25<br>Children-----$15</td>
+                <td>Long hair-----$50<br>Short hair-----$45<br>Children-----$20</td>
+            </tr>
+            <tr>
+                <td>Coloring</td>
+                <td>Regular dye-----$99<br>Premium dye-----$149<br>Blech-----$99</td>
+                <td>Regular dye-----$149<br>Premium dye-----$199<br>Blech-----$149</td>
+            </tr>
+            <tr>
+                <td>Perm</td>
+                <td>Long hair-----$89<br>Short hair-----$79<br>Bang only-----$69</td>
+                <td>Long hair-----$139<br>Short hair-----$129<br>Bang only-----$119</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+<div class="container">
+        <h5 style="font-family:verdana " class="text-success font-italic">Take Quick Survey to Get a FREE Hair Treatment!</h5>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#mySurvey">Open Survey</button>
+          
+        <!-- Modal -->
+        <div class="modal fade" id="mySurvey" role="dialog">
+            <div class="modal-dialog">  
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h2>Where did you hear about us?</h2>
+                        <p>Tell us:</p>
+                        <form>
+                          <div class="checkbox">
+                            <label><input type="checkbox" value="">Social Media</label>
+                          </div>
+                          <div class="checkbox">
+                            <label><input type="checkbox" value="">Flyer</label>
+                          </div>
+                          <div class="checkbox">
+                            <label><input type="checkbox" value="">From a friend</label>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div> 
+            </div>    
+        </div>  
+    </div>
+</div>
+
+    <!-- Presenting the staff with cards: https://www.w3schools.com/bootstrap4/bootstrap_cards.asp -->
+    <!-- Card columns allows multiple cards next to each other -->
+    <!-- The first card's button doesn't go anywhere, it could be a modal --> 
+    <!-- My second card limits the information seen and uses collapsible to show more -->
+        <div id="Booking" class="container tab-pane fade"><br>    
+        <div class="container p-3">
+        <a href="#hairdreesers" class="btn btn-secondary btn-block" data-toggle="collapse" style="font-family:verdana">Meet our Hair Dressers</a>
+        <!-- <div id="hairdreesers" class="collapse"> -->
+            <div class="card-deck">
+                <div class="card bg-secondary text-white" style="width:300px">
+                    <img class="card-img-top" src="images/Ed.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Ed</h4>
+                        <p class="card-text">Ed, the shop manage, experts in designing short hair.</p>
+                        <a href="#appointmentEd" class="btn btn-primary" data-toggle="collapse">Make Appointment</a>
+                        <div id="appointmentEd" class="collapse p-3">
+                            <!-- payments -->
+                            <div class="bigbox" id="Payment">
+                            <nav class="navbar navbar-inverse">
+                                <div class="container-fluid">
+
+                                </div><!-- /.container-fluid -->
+                            </nav>
+                            <div class="setYuyue">
+                                <div class="ybox"></div>
+                                <form style="margin-top: -20px !important;padding-top: 5px;" class="oldP">
+                                    <h3>Appointment</h3><hr>
+                                    <i class='fas fa-wallet' style='font-size:36px'></i>
+                                    <div class="alert alert-success" role="alert">Address：XXXX XXX Street, Ottawa, Ontario</div>
+                                    <div class="form-group">
+                                        <p>Your Name <input type="text" id="name"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p>Phone Number <input value="(xxx)-xxx-xxxx" type="text" id="phone"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p>Date <input type="text" id="dateInputEd"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p>Credit Card: <input type="text" id="credit" title="We ask for your credit card number in case of no-show, 20$ will be charged."></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p>Credit Card Date: <input type="text" id="date" title="We ask for your credit card number validation date"></p>
+                                    </div>
+                                    <button id="submit1" type="submit" class="btn btn-success yBtn"  >Submit an Appointment</button>
+                                </form>
+                            </div>
+                            </div>
+                        <!-- ------- -->
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-secondary text-white" style="width:300px">
+                    <img class="card-img-top" src="images/Charli.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Charli</h4>
+                        <p class="card-text">Charli experts in producing the best colors.</p>
+                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                        <a href="#appointmentC" class="btn btn-primary" data-toggle="collapse">Make Appointment</a>
+                        <div id="appointmentC" class="collapse p-3">
+                            <!-- payments -->
+                            <div class="bigbox" id="Payment">
+                            <nav class="navbar navbar-inverse">
+                                <div class="container-fluid">
+
+                                </div><!-- /.container-fluid -->
+                            </nav>
+                            <div class="setYuyue">
+                                <div class="ybox"></div>
+                                <form style="margin-top: -20px !important;padding-top: 5px;" class="oldP">
+                                    <h3>Appointment</h3><hr>
+                                    <i class='fas fa-wallet' style='font-size:36px'></i>
+                                    <div class="alert alert-success" role="alert">Address：XXXX XXX Street, Ottawa, Ontario</div>
+                                    <div class="form-group">
+                                        <p>Your Name <input type="text" id="name"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p>Phone Number <input value="(xxx)-xxx-xxxx" type="text" id="phone"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p>Date <input type="text" id="dateInputC"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p>Credit Card: <input type="text" id="credit" title="We ask for your credit card number in case of no-show, 20$ will be charged."></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p>Credit Card Date: <input type="text" id="date" title="We ask for your credit card number validation date"></p>
+                                    </div>
+                                    <button id="submit1" type="submit" class="btn btn-success yBtn"  >Submit an Appointment</button>
+                                </form>
+                            </div>
+                            </div>
+                        <!-- ------- -->
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-secondary text-white" style="width:300px">
+                    <img class="card-img-top" src="images/John.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">John</h4>
+                        <p class="card-text">John experts in perming and designing.</p>
+                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                        <a href="#appointmentJ" class="btn btn-primary" data-toggle="collapse">Make Appointment</a>
+                        <div id="appointmentJ" class="collapse p-3">
+                            <!-- payments -->
+                            <div class="bigbox" id="Payment">
+                            <nav class="navbar navbar-inverse">
+                                <div class="container-fluid">
+
+                                </div><!-- /.container-fluid -->
+                            </nav>
+                            <div class="setYuyue">
+                                <div class="ybox"></div>
+                                <form style="margin-top: -20px !important;padding-top: 5px;" class="oldP">
+                                    <h3>Appointment</h3><hr>
+                                    <i class='fas fa-wallet' style='font-size:36px'></i>
+                                    <div class="alert alert-success" role="alert">Address：XXXX XXX Street, Ottawa, Ontario</div>
+                                    <div class="form-group">
+                                        <p>Your Name <input type="text" id="name"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p>Phone Number <input value="(xxx)-xxx-xxxx" type="text" id="phone"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p>Date <input type="text" id="dateInputJ"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p>Credit Card: <input type="text" id="credit" title="We ask for your credit card number in case of no-show, 20$ will be charged."></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <p>Credit Card Date: <input type="text" id="date" title="We ask for your credit card number validation date"></p>
+                                    </div>
+                                    <button id="submit1" type="submit" class="btn btn-success yBtn"  >Submit an Appointment</button>
+                                </form>
+                            </div>
+                            </div>
+                        <!-- ------- -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+        </div>
+    </div>
+
+    <p></p>
+    <!-- Bootstrap has components for alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
+    <!-- These can be useful for making sure someone reads something before continuing -->
+<!--     <div class="container">
+        <h2>Alert</h2>
+        <p>We have something important to say</p>
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Please read! </strong>You must read.
+        </div>
+    </div>
+ -->
+    <!-- You'll certainly need buttons at some point in your site -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_buttons.asp -->
+    <!-- Remember how we talked about choosing a hue and changing the saturation for active/inactive -->
+    <!-- This idea is already part of the components in Bootstrap -->
+    <!-- <div class="container">
+        <h2>Button States</h2>
+        <button type="button" class="btn btn-warning">Primary Button</button>
+        <button type="button" class="btn btn-warning active">Active Primary</button>
+        <button type="button" class="btn btn-warning" disabled>Disabled Primary</button>
+    </div>
+ -->
+
+    <!-- Including a modal https://www.w3schools.com/bootstrap4/bootstrap_modal.asp -->
+    <!-- Modals are useful for additional information or questions -->
+    <!-- Here the modal is used for a little survey -->
+
+
+    
+
+       <p><p>
+                <style>
+                    button {color: gray}
+                </style>
+
+
+
+
+
+
+    
+    <div id="Find" class="container tab-pane fade"><br>
+        <div class="container" id="Find">
+            <div style="text-align:center">
+            <h2>Location</h2>
+
+            <p></p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>Location: XXXX XXX Street, Ottawa, Ontario </p>
+                    <p>Postal Code: XXX XXX </p>
+                    <p>Phone: 613-111-1111</p>
+                    <p>Opening Hours: Mon to Fri - 7:00 am - 11:00 pm</p>
+                    <p>&copy; 11's Hair Salon &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+                    <p>Designed by Group 11</p>
+                  </div>
+            <div class="column">
+                <div class="col-lg-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.3172201179464!2d-75.68532158457124!3d45.423106379100446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce050a6db98d73%3A0x188a59c3622fdbae!2sUniversity%20of%20Ottawa!5e0!3m2!1sen!2sca!4v1623634702436!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- A different approach would be to make the whole staff information collapsible -->
+    <!-- Here a block button (taking the full width) opens/closes the collapsible -->
+    <!-- Here a single card is used, but card columns could be used -->
+    <!-- <div class="container">
+        <h2>More information</h2>
+        <a href="#mechanics" class="btn btn-primary btn-block" data-toggle="collapse">Meet our mechanics</a>
+        <div id="mechanics" class="collapse">
+            <div class="card bg-warning" style="width:200px">
+                <img class="card-img-top" src="images/Erwind.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">Erwind</h4>
+                    <p class="card-text">Erwind knows all about bikes.</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Collapsible with multiple items - accordion -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
+    <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
+    <!-- could work well.  You can use other patterns too.  This is just an example. -->
+    <!-- <div class="container">
+        <div class="container-md p-3 my-3 border bg-warning text-white">
+            <h1>Erwind's and friends bike shop</h1>
+            <p>Bike fixing is our business</p>
+        </div>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseService">Choose a service</a>
+                </div>
+                <div id="collapseService" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Here is our list of services</p>
+                    </div>
+                </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose a date</a>
+                </div>
+                <div id="collapseDate" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>What date?</p>
+                        Bootstrap has various input components. Some examples are given here:
+                        <-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
+<!--                        <div class="form-group row">-->
+<!--                            <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>-->
+<!--                            <div class="col-10">-->
+<!--                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">-->
+<!--                            </div>-->
+<!--                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your info</a>
+                </div>
+                <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Your information so we can contact you</p>
+                        <p>Form to enter name, email, phone</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
